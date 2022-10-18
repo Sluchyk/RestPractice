@@ -2,6 +2,8 @@ package com.example.demo.service;
 
 import com.example.demo.exception.ProductNotFoundIdException;
 import com.example.demo.model.Product;
+import java.util.List;
+
 public interface ProductService {
     Iterable<Product> findAll();
     Product findById(Long id) throws ProductNotFoundIdException;
